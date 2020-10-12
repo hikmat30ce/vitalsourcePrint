@@ -75,7 +75,7 @@ def crop_center(pil_img, crop_width, crop_height):
 def open_url(email, password, list_url_pages, course_title, length, width, initial_page):
     option = Options()
     option.headless = True
-    driver = webdriver.Chrome(chrome_options=option)
+    driver = webdriver.Chrome(options=option)
     # driver = webdriver.Firefox(options=option)
 
     driver.maximize_window()
